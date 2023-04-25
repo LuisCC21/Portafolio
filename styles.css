@@ -463,7 +463,7 @@ body{
     grid-template-columns: 1fr 4fr 1fr;
     border: 1px solid #FFFFFF;
     border-radius: 2rem;
-    padding: 2rem 0; 
+    padding: 2rem 0 0 0 ; 
 
 }
 
@@ -492,11 +492,14 @@ body{
    grid-template-columns: 2fr 2fr;
    column-gap: 2rem;
    row-gap: 4rem;
+   
+
 }
 @media (max-width: 1400px){
     .proyectos__grid{
-        row-gap: 6rem;;
-
+        row-gap: 6rem;
+        padding-bottom: 2rem;   
+      
     }
 }
 @media (max-width: 1124px){
@@ -562,6 +565,24 @@ body{
  margin: 1.5rem 0;
 }
 
+.proyectos__extras{
+    grid-column: 1/3;
+}
+@media (max-width: 1024px){
+    .proyectos__extras{
+        grid-column:unset;
+    }
+}
+@media (max-width: 1024px){
+    .proyectos__mas{
+        margin: 0;
+    }
+}
+
+.proyectos__link{
+    font-weight: 700;
+
+}
 .tecnologias__habilidad{
     margin-bottom: 4rem;
    
