@@ -372,8 +372,14 @@ body{
 }
 @media (max-width: 640px){
     .descripcion{
-        margin: 3rem auto;
+        padding:  0 2rem;
+        min-width: 100%;
     }
+    .descripcion__text{
+       
+    
+    }
+    
     
 }
 .descripcion__text{
@@ -525,6 +531,15 @@ body{
        grid-template-columns: 1fr;
        margin-bottom: 0;
        row-gap:4rem;
+       
+
+    }
+}
+@media (max-width: 640px){
+    .proyectos__grid{
+       grid-template-columns: 1fr;
+       margin-bottom: 0;
+       row-gap:6rem;
        
 
     }
